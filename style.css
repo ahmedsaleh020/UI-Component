@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 95vh;
+}
+main {
+  width: 40rem;
+  height: 25rem;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  border-radius: 25px;
+}
+
+.card {
+  width: 50%;
+  height: 100%;
+}
+.lt-card {
+  background-color: #1565c0;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 15px;
+}
+.lt-card h2,
+.rt-card h2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.671);
+  font-weight: 500;
+  margin-top: 5px;
+}
+.lt-card .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(5 67 137);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.lt-card .circle .result {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-style: oblique;
+}
+.lt-card .circle .rest-of-result {
+  color: rgba(255, 243, 243, 0.507);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.lt-card h3 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-style: oblique;
+}
+.lt-card p {
+  text-align: center;
+  width: 90%;
+  color: white;
+  font-size: 0.9rem;
+}
+.rt-card {
+  background-color: #f5f5f5;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.rt-card h2 {
+  text-align: left;
+  margin-left: 20px;
+  color: #070a2f;
+}
+.sub-cards {
+  margin: 50px auto 0;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+.sub-card {
+  background-color: rgba(146, 151, 149, 0.39);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 200px;
+}
+.sub-card .text {
+  font-weight: bold;
+  color: #512da8;
+}
+.sub-card .grade {
+  font-weight: 400;
+  color: #7d8ea1;
+}
+.sub-card .grade span {
+  font-weight: 600;
+  color: #0a396e;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: #070a2f;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+@media (max-width: 760px) {
+  body {
+    height: 85vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: auto 0;
+  }
+  main {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+  }
+  .card {
+    width: 100%;
+  }
+  .lt-card {
+    height: 40%;
+    border-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    justify-content: flex-end;
+    row-gap: 0;
+  }
+  .lt-card h2 {
+    font-size: 1.3rem;
+  }
+  .lt-card .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .lt-card .circle .result {
+    font-size: 1.5rem;
+  }
+  .lt-card .circle .rest-of-result {
+    font-size: 0.9rem;
+  }
+  .lt-card p {
+    font-size: 0.7rem;
+  }
+  .lt-card h3 {
+    font-size: 1.2rem;
+  }
+  .rt-card {
+    height: 60%;
+  }
+  .rt-card h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .sub-cards {
+    row-gap: 10px;
+    margin: 20px auto 0;
+  }
+}
